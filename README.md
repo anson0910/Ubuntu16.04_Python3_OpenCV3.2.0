@@ -46,7 +46,16 @@ cd /usr/local/lib/python3.5/site-packages/
 sudo mv cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
 ```
 
+## If not done already, add **/usr/local/lib/python3.5/site-packages/** to PYTHONPATH and PyCharm Interpreter Paths:
+1. Add this line to **~/.bashrc**:<br>
+    `export PYTHONPATH="${PYTHONPATH}:/usr/local/lib/python3.5/site-packages"`
+
+2. In PyCharm, go to File > Settings
+3.  In the left pane, choose Project:... > Project Interpreter. In the main pane on the right, click the settings symbol (gear symbol) next to the field for "Project Interpreter". Choose More in the menu that pops up. Pick the interpreter you are using for this project and click on the tree symbol at the bottom of the window (hovering over the symbol reveals it as "Show paths for the selected interpreter"). Add your path by click in the "plus" symbol.
+
 ## References
 1. [http://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/](http://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/)
 
 2. [http://stackoverflow.com/questions/17287250/install-opencv-for-python-multiple-python-versions](http://stackoverflow.com/questions/17287250/install-opencv-for-python-multiple-python-versions)
+
+3. [http://stackoverflow.com/questions/28326362/pycharm-and-pythonpath](http://stackoverflow.com/questions/28326362/pycharm-and-pythonpath)
